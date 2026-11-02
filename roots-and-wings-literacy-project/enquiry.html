@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquire — Roots &amp; Wings Literacy Project</title>
+  <meta name="description" content="Enquire about free tutoring, book mailings, summer camps, volunteering or sponsorship with Roots & Wings Literacy Project in Columbus, Ohio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="brand-mark" aria-hidden="true"></span>Roots &amp; Wings</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="impact.html">Impact &amp; Stories</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="donate.html" class="btn btn-primary">Donate</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <span class="eyebrow">Enquiry</span>
+      <h1 style="max-width:22ch;">Ask about our programs, volunteering or sponsorship.</h1>
+      <p class="lede">Tell us what you’re interested in and we’ll get back to you with availability, next steps and any costs (most of our programs are free for families).</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container" style="max-width:720px;">
+      <form class="form-card reveal" id="enquiry-form" novalidate aria-label="Enquiry form">
+        <h3 class="mt-0">Programme / Opportunity Enquiry</h3>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="eq-first">First name *</label>
+            <input type="text" id="eq-first" name="firstName" required minlength="2" maxlength="50">
+            <span class="error-msg" id="eq-first-error"></span>
+          </div>
+          <div class="field">
+            <label for="eq-last">Last name *</label>
+            <input type="text" id="eq-last" name="lastName" required minlength="2" maxlength="50">
+            <span class="error-msg" id="eq-last-error"></span>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="eq-email">Email *</label>
+            <input type="email" id="eq-email" name="email" required>
+            <span class="error-msg" id="eq-email-error"></span>
+          </div>
+          <div class="field">
+            <label for="eq-phone">Phone</label>
+            <input type="tel" id="eq-phone" name="phone" pattern="[\d\s\-\+\(\)]{7,20}" placeholder="(614) 555-0123">
+            <span class="error-msg" id="eq-phone-error"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="eq-interest">I am enquiring about *</label>
+          <select id="eq-interest" name="interest" required>
+            <option value="">— Please select —</option>
+            <option value="tutoring">Free Tutoring for a child</option>
+            <option value="book-mailings">Monthly Book Mailings</option>
+            <option value="summer-camps">Summer Reading Camps</option>
+            <option value="volunteer">Becoming a Volunteer Tutor</option>
+            <option value="sponsor">Corporate / Individual Sponsorship</option>
+            <option value="other">Something else</option>
+          </select>
+          <span class="error-msg" id="eq-interest-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="eq-details">Additional details</label>
+          <textarea id="eq-details" name="details" rows="4" maxlength="800" placeholder="Child’s age/grade, preferred location, company name, etc."></textarea>
+          <span class="char-count"><span id="eq-details-count">0</span>/800</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Submit Enquiry</button>
+
+        <!-- Response area (shown after successful validation) -->
+        <div id="enquiry-response" class="form-success" style="display:none; margin-top:1.5rem;"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <!-- copy the same footer you already use on other pages -->
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand"><span class="brand-mark" aria-hidden="true"></span>Roots &amp; Wings</a>
+        <p style="max-width:32ch;">Closing the childhood literacy gap in Columbus, Ohio — one book, one tutor, one confident reader at a time.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="impact.html">Impact &amp; Stories</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <ul class="footer-links">
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="enquiry.html">Make an Enquiry</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in touch</h4>
+        <form class="newsletter-row" data-demo-form>
+          <label for="footer-email" class="visually-hidden">Email address</label>
+          <input type="email" id="footer-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-primary" style="padding:0.6rem 1.1rem;">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Roots &amp; Wings Literacy Project. A 501(c)(3) nonprofit organisation.</span>
+      <span>Columbus, Ohio</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

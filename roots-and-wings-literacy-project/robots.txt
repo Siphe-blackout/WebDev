@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siphe-blackout.github.io/WebDev/roots-and-wings-literacy-project/sitemap.xml
